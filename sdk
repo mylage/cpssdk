@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+$paths = [
+    __DIR__ . '/src/console.php',
+    __DIR__ . '/vendor/Mylarge/union-sdk/src/console.php',
+];
+foreach ($paths as $path) {
+    if (is_file($path)) {
+        require $path;
+        break;
+    }
+}

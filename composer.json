@@ -1,0 +1,37 @@
+{
+  "name": "mylarge/union-sdk",
+  "description": "cps联盟sdk",
+  "authors": [
+    {
+      "name": "Mylarge"
+    }
+  ],
+  "bin": [
+    "sdk"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Mylarge\\UnionSdk\\": "src",
+      "Mylarge\\UnionSdk\\tests\\": "tests"
+    }
+  },
+  "license": "MIT",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer/"
+    }
+  ],
+  "require": {
+    "php": ">=7.3.0",
+    "ext-bcmath": "*",
+    "ext-curl": "*",
+    "ext-simplexml": "*",
+    "ext-json": "*",
+    "guzzlehttp/guzzle": "~6.0|^7.0",
+    "symfony/console": "~5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~9.0"
+  }
+}
